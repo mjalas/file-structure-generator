@@ -1,4 +1,34 @@
-/.venv/
-*__pycache__
+# Sublime project files
+*.sublime-project
+*.sublime-workspace
+
+# Virtual environments
+.env
+.venv
+/venv/
+/.tox/
+/rvenv/
+
+__pycache__*
+
+# Compiled python modules.
+*.pyc
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/.eggs/
+/*.egg-info
+/*.egg
+
+/build/
+
+# Coverage
+.coverage
+/htmlcov/
+
+
+
 
 */parent/
