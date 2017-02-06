@@ -1,0 +1,11 @@
+hierarchy:
+    parent:
+        - child1 :
+            - grandchild1 : ""
+            - grandchild2 : ""
+        - child2 :
+            - grandchild3 : ""
+        - child3 :
+            - grandchild4 : ""
+            - grandchild5 : ""     
+
