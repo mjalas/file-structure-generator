@@ -34,6 +34,11 @@ setup(
         'Programming Language :: Python :: 3.5',
     ],
     keywords='folder-generator',
-    setup_requires=['nose>=1.0', 'coverage>=4.0.3', 'pypandoc>=1.1.3'],
-    packages=find_packages(exclude=['contrib', 'docs', 'tests', 'env_creators']),
+    setup_requires=['command-line-parser>=0.0.3', 'PyYAML==3.12', 'nose>=1.0', 'coverage>=4.0.3', 'pypandoc>=1.1.3'],    
+    packages=find_packages(exclude=['tests']),
+    entry_points={
+        'console_scripts': [
+            'structure-generator=src.__main__:main'
+        ]
+    }
 )

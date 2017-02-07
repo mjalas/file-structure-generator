@@ -5,12 +5,13 @@ import os.path
 class Logger(object):
     """Simple logger class."""
 
-    def __init__(self):
-        pass
+    def __init__(self, debug):
+        self.debug = debug
 
     def log(self, message):
         """Prints the message to stdout."""
-        print(message)
+        if self.debug:
+            print(message)
 
 
 class StructureGenerator(object):
@@ -19,12 +20,16 @@ class StructureGenerator(object):
     def __init__(self, logger):
         self.logger = logger
 
+    def __log(self, message):
+        if self.logger:
+            self.logger.log(message)
+
     def generate_structure(self, startfrom, structure):
         """Generates folder structure."""
         base_path = startfrom
         dir_separator = "/"
         if not os.path.exists(base_path):
-            self.logger.log("The startfrom (" + base_path + ") path does not exist!")
+            self.__log("The startfrom (" + base_path + ") path does not exist!")
             raise FileExistsError("Base path does not exist (" + base_path + ")")
 
         for item in structure:
@@ -34,5 +39,5 @@ class StructureGenerator(object):
                 path = base_path
             path = path + item
             if not os.path.exists(path):
-                self.logger.log("Generating path: " + path)
+                self.__log("Generating path: " + path)
                 os.makedirs(path)

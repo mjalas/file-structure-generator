@@ -16,7 +16,7 @@ class TestStructureGenerator(unittest.TestCase):
             "parent/child2",
         ]
 
-        logger = Logger()
+        logger = Logger(True)
         generator = StructureGenerator(logger)
         generator.generate_structure(os.getcwd(), structures)
 
