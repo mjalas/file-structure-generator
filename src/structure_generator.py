@@ -29,8 +29,11 @@ class StructureGenerator(object):
         base_path = startfrom
         dir_separator = "/"
         if not os.path.exists(base_path):
-            self.__log("The startfrom (" + base_path + ") path does not exist!")
-            raise FileExistsError("Base path does not exist (" + base_path + ")")
+            try:
+                os.mkdir(base_path)
+            except EnvironmentError:
+                self.__log("The startfrom (" + base_path + ") path does not exist and could not be created!")
+                raise FileExistsError("Base path does not exist and could not be created (" + base_path + ")!")
 
         for item in structure:
             if not base_path.endswith(dir_separator) and not item.startswith(dir_separator):

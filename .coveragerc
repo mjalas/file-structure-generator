@@ -1,0 +1,4 @@
+[run]
+omit = 
+    src/__main__.py
+    src/app.py
