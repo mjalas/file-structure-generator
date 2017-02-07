@@ -16,10 +16,10 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='file-structure-generator',
-    version='0.0.1',
+    version='0.0.2',
     description='A folder structure generator tool.',
     #long_description=long_description,
-    url='https://github.com/mjalas/command-line-parser',
+    url='https://github.com/mjalas/file-structure-generator',
     author='Mats Jalas',
     author_email='mats.jalas@gmail.com',
     license='MIT',
