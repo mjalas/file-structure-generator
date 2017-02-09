@@ -16,7 +16,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='file-structure-generator',
-    version='0.0.4',
+    version='0.0.5',
     description='A folder structure generator tool.',
     #long_description=long_description,
     url='https://github.com/mjalas/file-structure-generator',
