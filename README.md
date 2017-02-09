@@ -9,12 +9,12 @@ There are currently two different ways of installing the application.
 
 Through pip:
 ```
-pip install command-line-parser
+pip install file-structure-generator
 ```
 
 Manually:
 ```
-git clone https://github.com/mjalas/command-line-parser.git
+git clone https://github.com/mjalas/file-structure-generator
 cd command-line-parser
 python setup.py install
 ```
