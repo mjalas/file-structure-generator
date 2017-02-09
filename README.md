@@ -1,4 +1,5 @@
 # File structure generator tool
+[![PyPI version](https://badge.fury.io/py/file-structure-generator.svg)](https://badge.fury.io/py/file-structure-generator)
 [![Build Status](https://travis-ci.org/mjalas/file-structure-generator.svg?branch=master)](https://travis-ci.org/mjalas/file-structure-generator)
 
 A simple tool for generating a file structure according to a configuration file.
