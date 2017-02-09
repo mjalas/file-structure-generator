@@ -14,7 +14,7 @@ pip install file-structure-generator
 
 Manually:
 ```
-git clone https://github.com/mjalas/file-structure-generator
+git clone https://github.com/mjalas/file-structure-generator.git
 cd command-line-parser
 python setup.py install
 ```
