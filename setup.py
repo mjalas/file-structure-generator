@@ -36,11 +36,11 @@ setup(
     keywords='folder-generator',
     install_requires=[
         'command-line-parser>=0.0.4',
-        'PyYAML==3.12'
+        'PyYAML==5.4'
     ],
     setup_requires=[
         'command-line-parser>=0.0.4',
-        'PyYAML==3.12',
+        'PyYAML==5.4',
         'nose>=1.0',
         'coverage>=4.0.3',
         'pypandoc>=1.1.3'
